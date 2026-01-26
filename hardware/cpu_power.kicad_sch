@@ -6462,16 +6462,6 @@
 		)
 		(uuid "fddb6f1c-898d-4161-9534-28d7819c61bd")
 	)
-	(label "vdd_dll"
-		(at 24.13 113.03 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "1e567fa1-7331-442f-8b67-fd0b8e3e308e")
-	)
 	(label "rtcvio"
 		(at 24.13 128.27 0)
 		(effects
@@ -6491,16 +6481,6 @@
 			(justify left bottom)
 		)
 		(uuid "46dee337-cb3e-4def-8990-6b1cefef1211")
-	)
-	(label "vdd_dll"
-		(at 161.29 76.2 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "5a07031d-d27d-40e0-8d52-57a5adcf8308")
 	)
 	(global_label "VCC_PD"
 		(shape input)
@@ -6757,6 +6737,50 @@
 		(uuid "9cfa211a-90ab-46e1-9265-35f7fa45b8b0")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 157.2162 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "VCC_DLL"
+		(shape input)
+		(at 24.13 113.03 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "a55e959e-bb78-4bef-b0ae-ca4940fa828c")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 13.2224 113.03 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "VCC_DLL"
+		(shape input)
+		(at 161.29 76.2 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "a8474387-ce73-4adb-8d94-cf6ecb097e8a")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 150.3824 76.2 0)
 			(effects
 				(font
 					(size 1.27 1.27)
