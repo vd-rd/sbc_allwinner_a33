@@ -6420,7 +6420,7 @@
 	)
 	(wire
 		(pts
-			(xy 27.94 116.84) (xy 31.75 116.84)
+			(xy 40.64 26.67) (xy 44.45 26.67)
 		)
 		(stroke
 			(width 0)
@@ -6580,7 +6580,7 @@
 	)
 	(wire
 		(pts
-			(xy 27.94 119.38) (xy 31.75 119.38)
+			(xy 40.64 29.21) (xy 44.45 29.21)
 		)
 		(stroke
 			(width 0)
@@ -6630,7 +6630,7 @@
 	)
 	(wire
 		(pts
-			(xy 27.94 111.76) (xy 31.75 111.76)
+			(xy 40.64 31.75) (xy 44.45 31.75)
 		)
 		(stroke
 			(width 0)
@@ -6740,7 +6740,7 @@
 	)
 	(wire
 		(pts
-			(xy 27.94 114.3) (xy 31.75 114.3)
+			(xy 40.64 34.29) (xy 44.45 34.29)
 		)
 		(stroke
 			(width 0)
@@ -7768,7 +7768,7 @@
 	)
 	(global_label "GPIO3"
 		(shape bidirectional)
-		(at 27.94 116.84 180)
+		(at 40.64 26.67 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -7778,7 +7778,7 @@
 		)
 		(uuid "6466e59e-9114-4978-bc7e-9480a756772f")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 19.8421 116.9194 0)
+			(at 32.5421 26.7494 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8056,7 +8056,7 @@
 	)
 	(global_label "GPIO1"
 		(shape bidirectional)
-		(at 27.94 111.76 180)
+		(at 40.64 31.75 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -8066,7 +8066,7 @@
 		)
 		(uuid "ae4c7764-ee2c-4ad3-8e76-8f624e874856")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 19.8421 111.8394 0)
+			(at 32.5421 31.8294 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8152,7 +8152,7 @@
 	)
 	(global_label "GPIO2"
 		(shape bidirectional)
-		(at 27.94 114.3 180)
+		(at 40.64 34.29 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -8162,7 +8162,7 @@
 		)
 		(uuid "ca92f65f-1f34-44c0-9043-f379e227b721")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 19.8421 114.2206 0)
+			(at 32.5421 34.2106 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8560,7 +8560,7 @@
 	)
 	(global_label "GPIO4"
 		(shape bidirectional)
-		(at 27.94 119.38 180)
+		(at 40.64 29.21 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -8570,7 +8570,7 @@
 		)
 		(uuid "fd66e75f-fbcb-48e9-b7dc-71d0587ff9d8")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 19.8421 119.3006 0)
+			(at 32.5421 29.1306 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
