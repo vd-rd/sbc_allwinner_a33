@@ -3053,7 +3053,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Device:LED_GRBA"
+		(symbol "Device:LED_BAGR"
 			(pin_names
 				(offset 0)
 				(hide yes)
@@ -3073,7 +3073,7 @@
 					)
 				)
 			)
-			(property "Value" "LED_GRBA"
+			(property "Value" "LED_BAGR"
 				(at 0 -8.89 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -3105,7 +3105,7 @@
 					)
 				)
 			)
-			(property "Description" "RGB LED, green/red/blue/anode"
+			(property "Description" "RGB LED, blue/anode/green/red"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -3138,7 +3138,7 @@
 					)
 				)
 			)
-			(symbol "LED_GRBA_0_0"
+			(symbol "LED_BAGR_0_0"
 				(text "R"
 					(at -1.905 3.81 0)
 					(effects
@@ -3164,7 +3164,7 @@
 					)
 				)
 			)
-			(symbol "LED_GRBA_0_1"
+			(symbol "LED_BAGR_0_1"
 				(polyline
 					(pts
 						(xy -1.27 6.35) (xy -1.27 3.81)
@@ -3496,11 +3496,11 @@
 					)
 				)
 			)
-			(symbol "LED_GRBA_1_1"
+			(symbol "LED_BAGR_1_1"
 				(pin passive line
-					(at -5.08 0 0)
+					(at -5.08 -5.08 0)
 					(length 2.54)
-					(name "GK"
+					(name "BK"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -3516,9 +3516,9 @@
 					)
 				)
 				(pin passive line
-					(at -5.08 5.08 0)
+					(at 5.08 0 180)
 					(length 2.54)
-					(name "RK"
+					(name "A"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -3534,9 +3534,9 @@
 					)
 				)
 				(pin passive line
-					(at -5.08 -5.08 0)
+					(at -5.08 0 0)
 					(length 2.54)
-					(name "BK"
+					(name "GK"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -3552,9 +3552,9 @@
 					)
 				)
 				(pin passive line
-					(at 5.08 0 180)
+					(at -5.08 5.08 0)
 					(length 2.54)
-					(name "A"
+					(name "RK"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -8032,6 +8032,30 @@
 			)
 		)
 	)
+	(global_label "I2C-SCL"
+		(shape output)
+		(at 67.31 57.15 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "7a5deef7-459b-48ac-b13a-4ab965ed8f54")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 77.8874 57.0706 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+	)
 	(global_label "UART2-RX"
 		(shape input)
 		(at 39.37 144.78 180)
@@ -8272,30 +8296,6 @@
 			)
 		)
 	)
-	(global_label "RSB-SDA"
-		(shape bidirectional)
-		(at 34.29 59.69 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "860f5342-8107-4736-990d-ac51e13a9088")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 23.0822 59.6106 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-	)
 	(global_label "TOUCH-YU"
 		(shape output)
 		(at 67.31 54.61 0)
@@ -8437,30 +8437,6 @@
 					(size 1.27 1.27)
 				)
 				(justify right)
-			)
-		)
-	)
-	(global_label "RSB-SCK"
-		(shape input)
-		(at 67.31 57.15 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "9a5833c7-93fb-406f-9575-cb5d68b77d4c")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 78.6992 57.2294 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
 			)
 		)
 	)
@@ -8701,6 +8677,30 @@
 					(size 1.27 1.27)
 				)
 				(justify left)
+			)
+		)
+	)
+	(global_label "I2C-SDA"
+		(shape bidirectional)
+		(at 34.29 59.69 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "c24f4761-e7b8-45a3-82e3-70f307ed26ee")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 23.6521 59.6106 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
 			)
 		)
 	)
@@ -9205,92 +9205,6 @@
 					(size 1.27 1.27)
 				)
 				(justify right)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:LED_GRBA")
-		(at 62.23 30.48 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "0329f31d-8734-475e-9905-f9c455324dbc")
-		(property "Reference" "D1"
-			(at 62.23 16.51 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "LED_RGBA"
-			(at 62.23 19.05 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "led:rgb-1204"
-			(at 62.23 31.75 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 62.23 31.75 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 62.23 30.48 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "6f75ea3e-6135-44f5-9313-1aad839ab6f6")
-		)
-		(pin "2"
-			(uuid "2330617f-82c2-43f9-8a7c-826ddfdbb89f")
-		)
-		(pin "3"
-			(uuid "321c97ce-037e-4926-8c05-7be14a63f7fd")
-		)
-		(pin "4"
-			(uuid "d6962950-4b71-4ba8-ac78-7b9bfb3edf70")
-		)
-		(instances
-			(project "module"
-				(path "/be5594de-3f2c-4f50-9b5f-8272d138a20c/9546cd04-00fc-4f4e-96e6-36ef0ef6e918"
-					(reference "D1")
-					(unit 1)
-				)
 			)
 		)
 	)
@@ -11155,6 +11069,92 @@
 			(project "module"
 				(path "/be5594de-3f2c-4f50-9b5f-8272d138a20c/9546cd04-00fc-4f4e-96e6-36ef0ef6e918"
 					(reference "R6")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:LED_BAGR")
+		(at 62.23 30.48 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "96eab399-be81-4616-8c1b-cdc9b0082629")
+		(property "Reference" "D4"
+			(at 62.23 17.78 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "LED_BAGR"
+			(at 62.23 20.32 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "led:LED_RGB_Optosupply_OSTB0805C1E-A-0.8T"
+			(at 62.23 31.75 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 62.23 31.75 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "RGB LED, blue/anode/green/red"
+			(at 62.23 30.48 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "1a9a3b5c-675d-416c-99b8-9a38bb737896")
+		)
+		(pin "3"
+			(uuid "d0d6fcaf-9d71-4eb0-b2d4-27e2f51a725a")
+		)
+		(pin "4"
+			(uuid "94231445-b6c4-4aff-aae7-0b0a8bb6fa3c")
+		)
+		(pin "1"
+			(uuid "7bdaafe0-537e-493d-af3b-df1d142c8494")
+		)
+		(instances
+			(project "module"
+				(path "/be5594de-3f2c-4f50-9b5f-8272d138a20c/9546cd04-00fc-4f4e-96e6-36ef0ef6e918"
+					(reference "D4")
 					(unit 1)
 				)
 			)

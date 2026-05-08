@@ -6308,12 +6308,6 @@
 		(uuid "a926981b-4c50-40bd-ad6f-1387af87065b")
 	)
 	(junction
-		(at 255.27 125.73)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "acd69fcc-6deb-4121-837c-9524e6125630")
-	)
-	(junction
 		(at 138.43 153.67)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -6881,16 +6875,6 @@
 	)
 	(wire
 		(pts
-			(xy 255.27 125.73) (xy 261.62 125.73)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "4fe37abf-2bb0-4629-bd96-6e1761c6b6ab")
-	)
-	(wire
-		(pts
 			(xy 247.65 135.89) (xy 255.27 135.89)
 		)
 		(stroke
@@ -7041,7 +7025,7 @@
 	)
 	(wire
 		(pts
-			(xy 247.65 125.73) (xy 255.27 125.73)
+			(xy 247.65 125.73) (xy 261.62 125.73)
 		)
 		(stroke
 			(width 0)
@@ -9208,87 +9192,6 @@
 			(project "module"
 				(path "/be5594de-3f2c-4f50-9b5f-8272d138a20c/4122b4cc-2494-4291-833b-422eb37646e4"
 					(reference "C60")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:C_Small")
-		(at 255.27 128.27 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "0284a93d-1c05-47fc-b396-dd3353cf0124")
-		(property "Reference" "C69"
-			(at 255.5451 126.6434 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "10uF"
-			(at 255.4966 129.8295 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
-			(at 255.27 128.27 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 255.27 128.27 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 255.27 128.27 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "507388b7-a9ea-484e-9125-f7211853317a")
-		)
-		(pin "2"
-			(uuid "9b6144a9-1c2b-488f-877e-f9061214b103")
-		)
-		(instances
-			(project "module"
-				(path "/be5594de-3f2c-4f50-9b5f-8272d138a20c/4122b4cc-2494-4291-833b-422eb37646e4"
-					(reference "C69")
 					(unit 1)
 				)
 			)
